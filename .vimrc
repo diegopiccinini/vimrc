@@ -206,3 +206,9 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " bind \ (backward slash) to grep shortcut
 command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 nnoremap \ :Ag<SPACE>
+
+" To save, ctrl-s.
+nmap <C-a> :w<CR>
+imap <C-a> <Esc>:w<CR>a
+
+nmap <Enter> o<Esc> <CR>
