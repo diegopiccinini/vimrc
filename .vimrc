@@ -211,4 +211,5 @@ nnoremap \ :Ag<SPACE>
 nmap <C-a> :w<CR>
 imap <C-a> <Esc>:w<CR>a
 
-nmap <Enter> o<Esc>
+nnoremap , o<Esc>
+
