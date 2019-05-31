@@ -37,8 +37,8 @@ filetype plugin indent on
 set nocompatible " not compatible with vi
 set autoread " detect when a file is changed
 " NerdTree
-map <C-n> :NERDTreeToggle<CR>
-" map <C-t> :NERDTreeFind<CR>
+map <C-y> :NERDTreeToggle<CR>
+map <C-u> :NERDTreeFind<CR>
 
 " make backspace behave in a sane manner
 set backspace=indent,eol,start
@@ -255,3 +255,13 @@ command! MakeTags !ctags -R .
 
 " NOW WE CAN:
 " - Use ^n and ^p to go back and forth in the suggestion list
+
+" FILE BROWSING:
+
+" Tweaks for browsing
+let g:netrw_banner=0        " disable annoying banner
+let g:netrw_browse_split=4  " open in prior window
+let g:netrw_altv=1          " open splits to the right
+let g:netrw_liststyle=3     " tree view
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
