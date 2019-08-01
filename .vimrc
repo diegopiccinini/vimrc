@@ -34,7 +34,7 @@ filetype plugin indent on
 set nocompatible " not compatible with vi
 set autoread " detect when a file is changed
 " NerdTree
-map <C-y> :NERDTreeToggle<CR>
+map <C-w> :NERDTreeToggle<CR>
 map <C-u> :NERDTreeFind<CR>
 
 " make backspace behave in a sane manner
