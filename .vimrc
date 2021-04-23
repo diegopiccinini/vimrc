@@ -50,7 +50,7 @@ set tabstop=2 " the visible width of tabs
 set softtabstop=2 " edit as if the tabs are 4 characters wide
 set shiftwidth=2 "number of spaces to use for indent and unindent
 set shiftround " round indent to a multiple of 'shiftwidth'
-
+set number
 set clipboard=unnamed
 
 " faster redrawing
@@ -87,8 +87,6 @@ let base16colorspace=256  " Access colors present in 256 colorspace"
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 set background=dark
 colorscheme delek
-
-set nonumber
 
 set autoindent " automatically set indent of new line
 set smartindent
@@ -235,9 +233,6 @@ command! MakeTags !ctags -R .
 
 " THINGS TO CONSIDER:
 " - This doesn't help if you want a visual list of tags
-
-
-
 
 
 " AUTOCOMPLETE:
