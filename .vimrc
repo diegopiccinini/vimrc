@@ -26,6 +26,10 @@ Plugin 'chriskempson/base16-vim'
 " JavaScript plugins
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'othree/yajs'
+Plugin 'mxw/vim-jsx'
+
+let g:jsx_ext_required = 1
 
 call vundle#end()
 filetype plugin indent on
@@ -115,7 +119,6 @@ nmap \s :set ts=4 sts=4 sw=4 et<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 map <C-h> :call WinMove('h')<cr>
 map <C-j> :call WinMove('j')<cr>
 map <C-k> :call WinMove('k')<cr>
@@ -208,7 +211,7 @@ nnoremap , o<Esc>
 
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
-set path+=**
+"set path+=**
 
 " Display all matching files when we tab complete
 set wildmenu
